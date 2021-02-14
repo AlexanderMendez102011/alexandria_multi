@@ -1,0 +1,38 @@
+[20 : 45 : 40] : Starting logger..
+[20 : 45 : 40] : messageReceived de 127.0.0.1 : SK1;jivaa;50000
+[20 : 45 : 40] : messageSent : SKK# -> 1
+[20 : 45 : 40] : messageReceived de 1 : SH127.0.0.1;5555
+[20 : 45 : 40] : messageSent : SHK# -> 1
+[20 : 45 : 40] : messageReceived de 1 : SS1
+[20 : 46 : 02] : messageSent : F?# -> 1
+[20 : 46 : 02] : messageReceived de 1 : F700
+[20 : 46 : 32] : messageSent : F?# -> 1
+[20 : 46 : 32] : messageReceived de 1 : F700
+[20 : 46 : 36] : exceptionCaught : Connection reset -> 1
+[20 : 46 : 36] : sessionClosed -> 1
+[21 : 16 : 48] : Starting logger..
+[21 : 16 : 48] : messageReceived de 127.0.0.1 : SK1;jivaa;50000
+[21 : 16 : 48] : messageSent : SKK# -> 1
+[21 : 16 : 48] : messageReceived de 1 : SH127.0.0.1;5555
+[21 : 16 : 48] : messageSent : SHK# -> 1
+[21 : 16 : 48] : messageReceived de 1 : SS1
+[21 : 17 : 09] : messageSent : F?# -> 1
+[21 : 17 : 09] : messageReceived de 1 : F700
+[21 : 17 : 39] : messageSent : F?# -> 1
+[21 : 17 : 39] : messageReceived de 1 : F700
+[21 : 18 : 09] : messageSent : F?# -> 1
+[21 : 18 : 09] : messageReceived de 1 : F700
+[21 : 18 : 39] : messageSent : F?# -> 1
+[21 : 18 : 39] : messageReceived de 1 : F700
+[21 : 19 : 09] : messageSent : F?# -> 1
+[21 : 19 : 09] : messageReceived de 1 : F700
+[21 : 19 : 39] : messageSent : F?# -> 1
+[21 : 19 : 39] : messageReceived de 1 : F700
+[21 : 20 : 09] : messageSent : F?# -> 1
+[21 : 20 : 09] : messageReceived de 1 : F700
+[21 : 20 : 39] : messageSent : F?# -> 1
+[21 : 20 : 39] : messageReceived de 1 : F700
+[21 : 21 : 09] : messageSent : F?# -> 1
+[21 : 21 : 09] : messageReceived de 1 : F700
+[21 : 21 : 12] : exceptionCaught : Connection reset -> 1
+[21 : 21 : 12] : sessionClosed -> 1

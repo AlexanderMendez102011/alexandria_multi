@@ -1,0 +1,32 @@
+Exception in thread "main" com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Could not connect to address=(host=127.0.0.1)(port=3306)(type=master) : (conn=32) Unknown database 'starloco_login'
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:595)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:581)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at database.Database.initializeConnection(Database.java:44)
+	at kernel.Main.start(Main.kt:46)
+	at kernel.Main.main(Main.kt:32)
+Caused by: java.sql.SQLSyntaxErrorException: Could not connect to address=(host=127.0.0.1)(port=3306)(type=master) : (conn=32) Unknown database 'starloco_login'
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:153)
+	at org.mariadb.jdbc.MariaDbDataSource.getConnection(MariaDbDataSource.java:277)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	... 5 more
+Caused by: java.sql.SQLSyntaxErrorException: Could not connect to address=(host=127.0.0.1)(port=3306)(type=master) : (conn=32) Unknown database 'starloco_login'
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1346)
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:634)
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150)
+	at org.mariadb.jdbc.MariaDbDataSource.getConnection(MariaDbDataSource.java:275)
+	... 9 more
+Caused by: java.sql.SQLSyntaxErrorException: (conn=32) Unknown database 'starloco_login'
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:187)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.authenticationHandler(AbstractConnectProtocol.java:769)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:546)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1341)
+	... 12 more
