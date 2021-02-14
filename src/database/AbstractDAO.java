@@ -127,7 +127,7 @@ public abstract class AbstractDAO<T> implements DAO<T> {
         }
     }
 
-    protected class Result {
+    protected static class Result {
         public final Connection connection;
         public final ResultSet resultSet;
 
